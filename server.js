@@ -4,13 +4,10 @@ import "dotenv/config";
 import cookieParser from "cookie-parser";
 import path from "path";
 import { fileURLToPath } from "url";
-import connectDB from "./config/db.js";
 
 const app = express();
 app.set("trust proxy", 1); // add this right after const app = express();
 const port = process.env.PORT || 4000;
-
-connectDB();
 
 // Fix __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
