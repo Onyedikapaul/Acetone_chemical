@@ -14,7 +14,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Allowed origins
-const allowedOrigins = ["http://localhost:4000", "http://127.0.0.1:5500"];
+const allowedOrigins = ["http://localhost:4000", "http://127.0.0.1:5500", "https://theacetonechem.com"];
 
 // Middleware
 app.use(cookieParser());
